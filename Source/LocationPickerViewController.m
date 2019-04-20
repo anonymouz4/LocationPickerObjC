@@ -56,7 +56,7 @@
 	self.searchBarStyle =UISearchBarStyleMinimal;
 	self.statusBarStyle = UIStatusBarStyleDefault;
 	
-	self.mapType = MKMapTypeHybridFlyover;//MKMapTypeHybrid;
+	self.mapType = MKMapTypeStandard;
 	
 	self.currentLocationListeners = [NSMutableArray new];
 	
@@ -73,18 +73,7 @@
 
 
 - (void)close {
-//	if (self.navigationController && self.navigationController.viewControllers.count > 1) {
-//		[self.navigationController popViewControllerAnimated:YES];
-//	} else if (self.navigationController) {
-//		[self.navigationController dismissViewControllerAnimated:YES completion:nil];
-//	} else {
-//		[self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
-//	}
-//	dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(void){
-//		dispatch_async(dispatch_get_main_queue(), ^(void){
-			[self dismissViewControllerAnimated:YES completion:nil];
-//		});
-//	});
+	[self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)viewDidLoad {
