@@ -7,9 +7,12 @@ I simply wrote it, because I couldn't find any useful LocationPicker in ObjC and
 It works perfectly for my Project, so there might be References or Method Calls to that project.
 Simply remove them and replace them with what fits for you best.
 
-Here's some sample Code:
+Trashed Files:
+I tried to implement a Location History, but something didn't work in the saving to userdefaults. It wasn't so important so I didn't finish it. Almost everything therefore is implemented, just uncomment any 'history' stuff.
 
+Finally, I also left a lot of Code I don't use anymore. It's commented out so feel free to remove it.
 
+##### Here's some sample Code:
 
 ```objective-c
 #import "LocationPickerViewController.h"
